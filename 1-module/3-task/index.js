@@ -4,5 +4,7 @@
  * @returns {string}
  */
 function ucFirst(str) {
-  // ваш код...
+  if (0 === str.length) return '';
+  let p = str.match(/^(.{1})(.*)$/);
+  return p[1].toLocaleUpperCase() + p[2];
 }
